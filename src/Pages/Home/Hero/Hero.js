@@ -10,9 +10,9 @@ const Hero = () => {
   return (
     <div
       style={heroStyle}
-      className="min-h-screen xs:min-h-screen w-full sm:bg-cover"
+      className="min-h-full lg:min-h-screen w-full sm:bg-cover"
     >
-      <div className="w-full min-h-screen xs:min-h-screen bg-gradient-to-r from-gray-800/75 to-gray-700/50 flex justify-center items-center flex-col">
+      <div className="w-full min-h-full lg:min-h-screen xs:min-h-screen bg-gradient-to-r from-gray-800/75 to-gray-700/50 flex justify-center items-center flex-col">
         <h2 className="text-center text-4xl lg:text-6xl text-white font-poppins font-semibold animate-pulse">
           আশ্রয়-The helping hand
         </h2>
@@ -21,7 +21,7 @@ const Hero = () => {
         </h3>
         <Link
           to="/"
-          className="capitalize px-6 py-3 border-2 text-lg font-poppins  border-primary text-white hover:bg-primary rounded-md"
+          className="capitalize px-6 py-3 mb-4 border-2 text-lg font-poppins  border-primary text-white hover:bg-primary rounded-md"
         >
           donate
         </Link>

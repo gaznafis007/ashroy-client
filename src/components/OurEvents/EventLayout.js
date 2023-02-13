@@ -5,14 +5,16 @@ const EventLayout = ({ event, index }) => {
   return (
     <>
       <div
-        className={`flex justify-around items-center md:items-start my-12 px-6 mx-8 ${
+        className={`flex justify-around items-center md:items-start my-16 px-6 mx-8 ${
           index > 0
             ? "flex-col md:flex-row-reverse"
             : "flex-col-reverse md:flex-row"
         }`}
       >
-        <div className="w-full my-4 sm:my-0 sm:w-1/3">
-          <h2 className="text-3xl text-center sm:text-left">{event.name}</h2>
+        <div className="w-full my-4 sm:my-0 p-4 sm:w-1/3">
+          <h2 className="text-3xl text-center font-semibold  sm:text-left text-primary">
+            {event.name}
+          </h2>
           <p className="my-6">
             {event.description.slice(0, 200) + "..."} <br />
           </p>
