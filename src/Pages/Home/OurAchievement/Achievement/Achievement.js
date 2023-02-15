@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 const Achievement = ({ achievement }) => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const { img, date, title } = achievement;
   const [isVisible, setIsVisible] = useState(false);
   console.log(isVisible);
   return (
-    <div className="bg-white flex flex-col rounded-lg relative">
+    <div
+      className="bg-white flex flex-col rounded-lg relative"
+      data-aos="zoom-in"
+      data-aos-duration="1500"
+    >
       <div
         className="w-fit h-fit z-[0]"
         onMouseEnter={() => setIsVisible(true)}

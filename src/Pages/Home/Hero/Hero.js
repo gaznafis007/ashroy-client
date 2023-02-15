@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Typewriter } from "react-simple-typewriter";
 import bgImg from "../../../assets/team-ashroy.jpg";
 
 const Hero = () => {
@@ -7,17 +8,22 @@ const Hero = () => {
     backgroundImage: `url(${bgImg})`,
     backgroundRepeat: "no-repeat",
   };
+  new Typewriter("#typewriter", {
+    strings: ["Hello", "World"],
+    autoStart: true,
+  });
   return (
     <div
       style={heroStyle}
       className="min-h-full lg:min-h-screen w-full sm:bg-cover"
     >
       <div className="w-full min-h-full lg:min-h-screen xs:min-h-screen bg-gradient-to-r from-gray-800/75 to-gray-700/50 flex justify-center items-center flex-col">
-        <h2 className="text-center text-4xl lg:text-6xl text-white font-poppins font-semibold animate-pulse">
+        <h2 className="text-center text-4xl lg:text-6xl text-white font-poppins font-semibold ">
           আশ্রয়-The helping hand
         </h2>
         <h3 className="text-3xl text-center font-semibold font-poppins my-4 text-primary ">
-          Sharing happiness for better living.
+          {/* Sharing happiness for better living. */}
+          <Typewriter words={["Sharing happiness for better living"]} />
         </h3>
         <Link
           to="/"

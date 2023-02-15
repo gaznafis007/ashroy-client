@@ -24,7 +24,7 @@ const Gallery = () => {
       <h1 className="text-2xl  sm:text-3xl p-4  md:text-4xl lg:text-6xl text-center font-semibold font-poppins capitalize">
         Gallery
       </h1>
-      <hr className="border-b-2 sm:border-b-4 lg:border-b-8 w-16 mx-auto  border-purple-600" />
+      <hr className="border-b-2 sm:border-b-4 lg:border-b-8 w-16 mx-auto  border-primary" />
       <div className="mt-6 grid grid-cols-4 grid-rows-3 gap-2  rounded-lg w-4/5 mx-auto">
         <img
           src={img1}

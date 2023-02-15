@@ -16,7 +16,7 @@ const OurEvents = () => {
       <h1 className="text-2xl  sm:text-3xl p-4  md:text-4xl lg:text-6xl text-center font-semibold font-poppins capitalize">
         our events
       </h1>
-      <hr className="border-b-2 sm:border-b-4 lg:border-b-8 w-16 mx-auto  border-purple-600" />
+      <hr className="border-b-2 sm:border-b-4 lg:border-b-8 w-16 mx-auto  border-primary" />
       <div className="my-6">
         {events.map((event, index) => {
           return (
