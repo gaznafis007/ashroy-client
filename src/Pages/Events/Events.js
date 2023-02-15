@@ -28,7 +28,7 @@ const Events = () => {
       </div>
       <div className="flex justify-center">
         <Link
-          to="/"
+          to="/donate"
           className="bg-primary inline-block px-8 py-4 text-center capitalize font-semibold font-poppins mx-auto rounded-lg my-4 text-white text-xl"
         >
           donate now

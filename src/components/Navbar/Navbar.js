@@ -13,17 +13,19 @@ const Navbar = () => {
         <Link to="/">home</Link>
       </li>
       <li>
-        <Link to="/events">events</Link>
+        <a href="#events">events</a>
       </li>
       <li>
-        <Link to="/aboutUs">about us</Link>
+        <a href="#aboutUs">our vision</a>
       </li>
     </>
   );
   return (
     <>
       <nav className="flex justify-between px-8 py-4 bg-primary text-white">
-        <h2 className="text-xl font-poppins lg:text-3xl font-bold">আশ্রয়</h2>
+        <h2 className="text-xl font-poppins lg:text-3xl font-bold">
+          <Link to="/">আশ্রয়</Link>
+        </h2>
         <ul className="list-none hidden  lg:flex gap-4 font-poppins text-xl capitalize">
           {navItems}
         </ul>

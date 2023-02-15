@@ -6,7 +6,7 @@ import Aos from "aos";
 const OurAchievement = () => {
   const [achievements, setAchievements] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/achievements")
+    fetch("https://ashroy-server.vercel.app/achievements")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

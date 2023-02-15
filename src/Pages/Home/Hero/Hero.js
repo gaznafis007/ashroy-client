@@ -26,7 +26,7 @@ const Hero = () => {
           <Typewriter words={["Sharing happiness for better living"]} />
         </h3>
         <Link
-          to="/"
+          to="/donate"
           className="capitalize px-6 py-3 mb-4 border-2 text-lg font-poppins  border-primary text-white hover:bg-primary rounded-md"
         >
           donate

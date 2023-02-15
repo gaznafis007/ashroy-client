@@ -15,7 +15,7 @@ const Footer = () => {
         </p>
       </div>
       <div className="grid grid-cols-4 gap-4 mt-8 md:mt-0">
-        <a href="#">
+        <a href="https://www.facebook.com/help.ashroy">
           <FaFacebook className="text-2xl text-white" />
         </a>
         <a href="#">

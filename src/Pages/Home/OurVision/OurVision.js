@@ -3,7 +3,7 @@ import img from "../../../assets/17.jpg";
 
 const OurVision = () => {
   return (
-    <section className="my-4">
+    <section className="my-4" id="aboutUs">
       <h1 className="text-2xl  sm:text-3xl p-4  md:text-4xl lg:text-6xl text-center font-semibold font-poppins capitalize">
         Our Vision
       </h1>

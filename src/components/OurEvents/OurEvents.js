@@ -4,7 +4,7 @@ import EventLayout from "./EventLayout";
 const OurEvents = () => {
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/projects")
+    fetch("https://ashroy-server.vercel.app/projects")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -12,7 +12,7 @@ const OurEvents = () => {
       });
   }, []);
   return (
-    <section className="my-4">
+    <section className="my-4" id="events">
       <h1 className="text-2xl  sm:text-3xl p-4  md:text-4xl lg:text-6xl text-center font-semibold font-poppins capitalize">
         our events
       </h1>
