@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLoaderData } from "react-router-dom";
 
 const Events = () => {
-  const { name, description, gallery } = useLoaderData();
+  const { name, description, gallery, title } = useLoaderData();
   console.log(gallery);
   return (
     <section className="my-4">
@@ -14,7 +14,7 @@ const Events = () => {
         <p className="">{description}</p>
       </div>
       <h2 className="my-8 text-center font-poppins text-4xl font-semibold">
-        Works of Winter's Smile
+        Works of {title}
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mx-8">
         {gallery.map((image, index) => (

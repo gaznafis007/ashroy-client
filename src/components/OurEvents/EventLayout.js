@@ -28,7 +28,7 @@ const EventLayout = ({ event, index }) => {
             {event.description.slice(0, 200) + "..."} <br />
           </p>
           <p className="mt-1 inline-block bg-primary px-4 py-3 rounded-md shadow-md text-white ">
-            <Link to={`/events/${event.id}`}>আরো দেখুন</Link>
+            <Link to={`/events/${event._id}`}>আরো দেখুন</Link>
           </p>
         </div>
         <div

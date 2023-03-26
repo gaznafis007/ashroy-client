@@ -4,7 +4,7 @@ import EventLayout from "./EventLayout";
 const OurEvents = () => {
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    fetch("https://ashroy-server.vercel.app/projects")
+    fetch("http://localhost:5000/projects")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -21,7 +21,7 @@ const OurEvents = () => {
         {events.map((event, index) => {
           return (
             <EventLayout
-              key={event.id}
+              key={event._id}
               event={event}
               index={index}
             ></EventLayout>

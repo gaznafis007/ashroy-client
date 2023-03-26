@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
         path: "/events/:id",
         element: <Events />,
         loader: ({ params }) =>
-          fetch(`https://ashroy-server.vercel.app/projects/${params.id}`),
+          fetch(`http://localhost:5000/projects/${params.id}`),
       },
       {
         path: "/donate",
