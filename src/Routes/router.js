@@ -1,3 +1,4 @@
+import Login from "../Pages/Admin/Login/Login";
 import Donate from "../Pages/Donate/Donate";
 import Events from "../Pages/Events/Events";
 import Home from "../Pages/Home/Home";
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
       {
         path: "/donate",
         element: <Donate />,
+      },
+      {
+        path: "/admin/login",
+        element: <Login />,
       },
     ],
   },
